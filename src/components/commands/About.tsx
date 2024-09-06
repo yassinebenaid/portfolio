@@ -19,8 +19,10 @@ const About: React.FC = () => {
       <p>
         Beside working as a <HighlightAlt>Full-Stack web developer</HighlightAlt> on a Saas company based in morocco. 
         I'm part of many teams maintaining some of the most used and well-known <HighlightAlt>Open-source</HighlightAlt> projects.
-        Including but not limited to <Link href="https://github.com/urfave/cli">urfave/cli</Link>,
-        <Link href="https://github.com/avelino/awesome-go">avelino/awesome-go</Link> and <Link href="https://github.com/yassinebenaid/godump">yassinebenaid/godump</Link>
+        Including but not limited to : <br/>
+      - <Link target="_blank" href="https://github.com/urfave/cli">urfave/cli</Link>  <br/>
+      - <Link target="_blank" href="https://github.com/avelino/awesome-go">avelino/awesome-go</Link>  <br/>
+      - <Link target="_blank" href="https://github.com/yassinebenaid/godump">yassinebenaid/godump</Link>
       </p>
     </AboutWrapper>
   );
