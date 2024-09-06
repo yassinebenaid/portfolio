@@ -52,26 +52,20 @@ const socials = [
   {
     id: 1,
     title: "GitHub",
-    url: "https://github.com/satnaing",
+    url: "https://github.com/yassinebenaid",
     tab: 3,
   },
   {
-    id: 2,
-    title: "Dev.to",
-    url: "https://dev.to/satnaing",
+    id: 1,
+    title: "Reddit",
+    url: "https://www.reddit.com/user/yassinebenaid/",
     tab: 3,
   },
   {
-    id: 3,
-    title: "Facebook",
-    url: "https://www.facebook.com/satnaing.dev",
+    id: 1,
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/yassine-benaid-054ba1253",
     tab: 1,
-  },
-  {
-    id: 4,
-    title: "Instagram",
-    url: "https://instagram.com/satnaing.dev",
-    tab: 0,
   },
 ];
 
