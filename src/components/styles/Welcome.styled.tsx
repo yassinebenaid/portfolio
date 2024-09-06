@@ -40,7 +40,7 @@ export const PreWrapper = styled.div`
 export const PreNameMobile = styled.pre`
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
-  font-size: 13px;
+  font-size: 11px;
 
   @media (min-width: 800px) {
     display: none;
