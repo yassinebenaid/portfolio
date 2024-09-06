@@ -12,13 +12,13 @@ const About: React.FC = () => {
         Hi, my name is <HighlightSpan>Yassine Benaid</HighlightSpan>!
       </p>
       <p>
-        I'm <HighlightAlt>a software developer</HighlightAlt> based in Morocco. I have been in the software industrie for at least 3 years. 
-        I spend most of my time developing web servers whether professionally or for fun. Desipite having experience in web design (front-end). 
+        I'm <HighlightAlt>a software developer</HighlightAlt> based in Morocco. I have been in the software industrie for at least 3 years. <br/>
+        I spend most of my time developing web servers whether professionally or for fun. Desipite having experience in web design (front-end). <br/>
         The back-end side takes most of my interest.
       </p>
       <p>
-        Beside working as a <HighlightAlt>Full-Stack web developer</HighlightAlt> on a Saas company based in morocco. 
-        I'm part of many teams maintaining some of the most used and well-known <HighlightAlt>Open-source</HighlightAlt> projects.
+        Beside working as a <HighlightAlt>Full-Stack web developer</HighlightAlt> on a Saas company based in morocco. <br/>
+        I'm part of many teams maintaining some of the most used and well-known <HighlightAlt>Open-source</HighlightAlt> projects. <br/>
         Including but not limited to : <br/>
       - <Link target="_blank" href="https://github.com/urfave/cli">urfave/cli</Link>  <br/>
       - <Link target="_blank" href="https://github.com/avelino/awesome-go">avelino/awesome-go</Link>  <br/>
