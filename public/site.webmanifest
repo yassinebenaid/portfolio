@@ -1,7 +1,7 @@
 {
-  "name": "Terminal Portfolio by SN",
-  "short_name": "Terminal",
-  "description": "Sat Naing's terminal portfolio website coded with ReactJS.",
+  "name": "Yassine Benaid's Portfolio",
+  "short_name": "yassinebenaid",
+  "description": "Yassine Benaid's personal portfolio.",
   "start_url": "/",
   "icons": [
     {
