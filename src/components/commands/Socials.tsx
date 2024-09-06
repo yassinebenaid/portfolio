@@ -56,13 +56,13 @@ const socials = [
     tab: 3,
   },
   {
-    id: 1,
+    id: 2,
     title: "Reddit",
     url: "https://www.reddit.com/user/yassinebenaid/",
     tab: 3,
   },
   {
-    id: 1,
+    id: 3,
     title: "LinkedIn",
     url: "https://www.linkedin.com/in/yassine-benaid-054ba1253",
     tab: 1,
