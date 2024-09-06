@@ -1,7 +1,7 @@
 import About from "./commands/About";
 import Clear from "./commands/Clear";
 import Email from "./commands/Email";
-import Gui from "./commands/Gui";
+import Exit from "./commands/Exit";
 import Help from "./commands/Help";
 import Welcome from "./commands/Welcome";
 import History from "./commands/History";
@@ -34,7 +34,7 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           about: <About />,
           clear: <Clear />,
           email: <Email />,
-          gui: <Gui />,
+          exit: <Exit />,
           help: <Help />,
           history: <History />,
           projects: <Projects />,
