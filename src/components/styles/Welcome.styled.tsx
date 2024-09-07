@@ -21,11 +21,11 @@ export const PreName = styled.pre`
   font-size: 12px;
 
   @media (min-width: 1000px) {
-   font-size: 14px;
+    font-size: 14px;
   }
 
   @media (min-width: 1200px) {
-   font-size: 16px;
+    font-size: 16px;
   }
 
   @media (max-width: 800px) {
@@ -40,7 +40,7 @@ export const PreWrapper = styled.div`
 export const PreNameMobile = styled.pre`
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
-  font-size: 9px;
+  font-size: 8px;
 
   @media (min-width: 800px) {
     display: none;
