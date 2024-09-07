@@ -22,3 +22,8 @@ export const ProjectDesc = styled.div`
   line-height: 1.5rem;
   max-width: 500px;
 `;
+
+export const Seperator = styled.div`
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+`;

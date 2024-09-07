@@ -8,10 +8,12 @@ import {
   ProjectContainer,
   ProjectDesc,
   ProjectsIntro,
+  Seperator,
   ProjectTitle,
 } from "../styles/Projects.styled";
 import { termContext } from "../Terminal";
 import Usage from "../Usage";
+import { Link } from "../styles/About.styled";
 
 const Projects: React.FC = () => {
   const { arg, history, rerender } = useContext(termContext);
@@ -21,8 +23,8 @@ const Projects: React.FC = () => {
 
   /* ===== check current command is redirect ===== */
   useEffect(() => {
-    if (checkRedirect(rerender, currentCommand, "projects")) {
-      projects.forEach(({ id, url }) => {
+    if (checkRedirect(rerender, currentCommand, "projects", [1, 2, 3, 4, 5])) {
+      mine.concat(others).forEach(({ id, url }) => {
         id === parseInt(arg[1]) && window.open(url, "_blank");
       });
     }
@@ -30,7 +32,7 @@ const Projects: React.FC = () => {
 
   /* ===== check arg is valid ===== */
   const checkArg = () =>
-    isArgInvalid(arg, "go", ["1", "2", "3", "4"]) ? (
+    isArgInvalid(arg, "go", ["1", "2", "3", "4", "5"]) ? (
       <Usage cmd="projects" />
     ) : null;
 
@@ -42,42 +44,74 @@ const Projects: React.FC = () => {
         “Talk is cheap. Show me the code”? I got you. <br />
         Here are some of my projects you shouldn't misss
       </ProjectsIntro>
-      {projects.map(({ id, title, desc }) => (
+      {mine.map(({ id, title, desc, url }) => (
         <ProjectContainer key={id}>
-          <ProjectTitle>{`${id}. ${title}`}</ProjectTitle>
+          <ProjectTitle>
+            {id}.{" "}
+            <Link href={url} target="_blank">
+              {title}
+            </Link>
+          </ProjectTitle>
           <ProjectDesc>{desc}</ProjectDesc>
         </ProjectContainer>
       ))}
+      <Seperator>----</Seperator>
+
+      <ProjectsIntro>
+        Additionally, I'm part of the official teams maintaining these well
+        known projects:
+      </ProjectsIntro>
+      {others.map(({ id, title, desc, url }) => (
+        <ProjectContainer key={id}>
+          <ProjectTitle>
+            {id}.{" "}
+            <Link href={url} target="_blank">
+              {title}
+            </Link>
+          </ProjectTitle>{" "}
+          <ProjectDesc>{desc}</ProjectDesc>
+        </ProjectContainer>
+      ))}
+      <Seperator>----</Seperator>
+
       <Usage cmd="projects" marginY />
     </div>
   );
 };
 
-const projects = [
+const mine = [
   {
     id: 1,
-    title: "Sat Naing's Blog",
-    desc: "My personal blog where I can write down my thoughts and experiences.",
-    url: "https://satnaing.dev/blog/",
+    title: "godump",
+    desc: "An open-source Go package to pretty-print variables into a human readable format. (usually used for tests logs).",
+    url: "https://github.com/yassinebenaid/godump",
   },
   {
     id: 2,
-    title: "Haru Fashion",
-    desc: "An ecommerce web application where users can browse various products and make purchases.",
-    url: "https://haru-fashion.vercel.app/",
+    title: "dotenv",
+    desc: "An open-source Go package to read environment files.",
+    url: "https://github.com/yassinebenaid/dotenv",
   },
   {
     id: 3,
-    title: "Haru API",
-    desc: "A RESTful API developed for the Haru fashion ecommerce project.",
-    url: "https://satnaing.github.io/haru-api/",
-  },
-  {
-    id: 4,
-    title: "AstroPaper Blog Theme",
-    desc: "A minimal, accessible and SEO-friendly Astro blog theme.",
-    url: "https://astro-paper.pages.dev/",
+    title: "nishimia",
+    desc: "An open-source interpreted dynamically typed programming language.",
+    url: "https://github.com/yassinebenaid/nishimia",
   },
 ];
 
+const others = [
+  {
+    id: 4,
+    title: "avelino/awesome-go",
+    desc: "A curated list of awesome Go frameworks, libraries and software.",
+    url: "https://github.com/avelino/awesome-go",
+  },
+  {
+    id: 5,
+    title: "urfave/cli",
+    desc: "A simple, fast, and fun package for building command line apps in Go.",
+    url: "https://github.com/urfave/cli",
+  },
+];
 export default Projects;

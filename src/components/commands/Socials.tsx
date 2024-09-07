@@ -18,7 +18,7 @@ const Socials: React.FC = () => {
 
   /* ===== check current command makes redirect ===== */
   useEffect(() => {
-    if (checkRedirect(rerender, currentCommand, "socials")) {
+    if (checkRedirect(rerender, currentCommand, "socials", [1, 2, 3])) {
       socials.forEach(({ id, url }) => {
         id === parseInt(arg[1]) && window.open(url, "_blank");
       });
@@ -27,9 +27,7 @@ const Socials: React.FC = () => {
 
   /* ===== check arg is valid ===== */
   const checkArg = () =>
-    isArgInvalid(arg, "go", ["1", "2", "3", "4"]) ? (
-      <Usage cmd="socials" />
-    ) : null;
+    isArgInvalid(arg, "go", ["1", "2", "3"]) ? <Usage cmd="socials" /> : null;
 
   return arg.length > 0 || arg.length > 2 ? (
     checkArg()
