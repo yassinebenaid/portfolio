@@ -47,20 +47,6 @@ describe("Terminal Component", () => {
       );
     });
 
-    it("should return 'visitor' when user type 'whoami' cmd", async () => {
-      await user.type(terminalInput, "whoami{enter}");
-      expect(screen.getByTestId("latest-output").firstChild?.textContent).toBe(
-        "visitor"
-      );
-    });
-
-    it("should return '/home/satnaing' when user type 'pwd' cmd", async () => {
-      await user.type(terminalInput, "pwd{enter}");
-      expect(screen.getByTestId("latest-output").firstChild?.textContent).toBe(
-        "/home/satnaing"
-      );
-    });
-
     it("should display cmd history when user type 'history' cmd", async () => {
       await user.type(terminalInput, "whoami{enter}");
       await user.type(terminalInput, "history{enter}");
@@ -138,19 +124,11 @@ describe("Terminal Component", () => {
       window.open = vi.fn();
     });
 
-    it("should redirect to portfolio website when user type 'gui' cmd", async () => {
-      await user.type(terminalInput, "gui{enter}");
-      expect(window.open).toHaveBeenCalled();
-      expect(screen.getByTestId("latest-output").firstChild?.textContent).toBe(
-        ""
-      );
-    });
-
     it("should open mail app when user type 'email' cmd", async () => {
       await user.type(terminalInput, "email{enter}");
       expect(window.open).toHaveBeenCalled();
       expect(screen.getByTestId("latest-output").firstChild?.textContent).toBe(
-        "contact@satnaing.dev"
+        "yassinebenaide3@gmail.com"
       );
     });
 
