@@ -18,7 +18,7 @@
       property="og:description"
       content="Yassine Benaid's personal portfolio. Yassine is a software developer based in Morocco."
     />
-   <!-- <meta
+    <!-- <meta
       property="og:image"
       content="https://terminal.satnaing.dev/sat-naing-terminal-og.png"
     />-->
@@ -38,7 +38,7 @@
 
     <!-- Favicons and assets -->
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />-->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1d2a35" />
     <meta name="msapplication-TileColor" content="#1d2a35" />
@@ -53,6 +53,21 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-R25JLMG891"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-R25JLMG891");
+    </script>
   </head>
   <body>
     <div id="root"></div>
