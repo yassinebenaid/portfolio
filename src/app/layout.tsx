@@ -5,9 +5,7 @@ import "../styles/globals.css";
 export const metadata = {
 	title: "Yassine Benaid",
 	description:
-		"Software Engineer by day, keyboard builder by night, and coffee\
- connoisseur all the time. Proud dad to a dog and cat who don't\
- care about my React skills.",
+		"Backend Engineer, Go enthusiast, passionate about TDD, Unix and language applications.",
 	openGraph: {
 		type: "website",
 		images: [{ url: githubAvatarURL }],
