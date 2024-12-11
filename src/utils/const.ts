@@ -45,15 +45,15 @@ type Project = {
 
 export const projects: Project[] = [
 	{
-		title: "Linkify",
-		description: "Link in bio.",
-		href: "https://github.com/zachbharris/Linkify",
+		title: "godump",
+		description: "Go library for variable formatting.",
+		href: "https://github.com/yassinebenaid/godump",
 		icon: "list-tree",
 	},
 	{
-		title: "Shrtn",
-		description: "Simple url shrtnr.",
-		href: "https://github.com/zachbharris/Shrtn",
+		title: "Bunster",
+		description: "A compiler written in go.",
+		href: "https://github.com/yassinebenaid/bunster",
 		icon: "magic-wand",
 	},
 ];
