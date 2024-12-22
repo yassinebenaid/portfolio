@@ -10,6 +10,7 @@ import {
   githubAvatarURL,
   experiences,
   getcataIcon,
+  skills,
 } from "@/utils/const";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { useEffect } from "react";
@@ -79,6 +80,25 @@ export default function Page() {
             </SectionItem>
           );
         })}
+      </Section>
+
+      <Section>
+        <h2>
+          <SectionTitle>Skills</SectionTitle>
+        </h2>
+
+        <div className="flex flex-wrap gap-2">
+          {skills.map((skill, index) => {
+            return (
+              <div
+                key={index}
+                className="bg-zinc-800/100 text-sm px-3 py-2 rounded-xl"
+              >
+                {skill}
+              </div>
+            );
+          })}
+        </div>
       </Section>
 
       <Section>

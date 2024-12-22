@@ -107,3 +107,20 @@ export const experiences: Experience[] = [
     },
   },
 ];
+
+export const skills: string[] = [
+  "PHP",
+  "GO",
+  "Javascript",
+  "Laravel",
+  "VueJs",
+  "Linux",
+  "Docker",
+  "Mysql",
+  "Postgres",
+  "Git",
+  "HTML",
+  "Tailwind CSS",
+  "DevOps",
+  "Language Development",
+];
