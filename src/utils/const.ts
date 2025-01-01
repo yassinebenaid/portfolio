@@ -85,7 +85,7 @@ export const experiences: Experience[] = [
     },
   },
   {
-    title: "Linux SysAdmin",
+    title: "DevOps Engineer",
     date: {
       from: "10/2023",
       to: "03/2024",
