@@ -74,10 +74,21 @@ type Experience = {
 
 export const experiences: Experience[] = [
   {
-    title: "Software Engineer",
+    title: "Senior Software Engineer",
+    date: {
+      from: "08/2026",
+      to: "Present",
+    },
+    company: {
+      name: "Journify",
+      href: "https://www.journify.io",
+    },
+  },
+  {
+    title: "Associate Software Engineer",
     date: {
       from: "10/2025",
-      to: "Present",
+      to: "08/2026",
     },
     company: {
       name: "Journify",
