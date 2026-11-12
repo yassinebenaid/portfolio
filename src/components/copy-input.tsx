@@ -40,7 +40,7 @@ export default function CopyInput() {
 			</AnimatePresence>
 			<input
 				type="email"
-				value="yassinebenaide3@gmail.com"
+				value="yassine@benaid.me"
 				className="bg-transparent flex-1 overflow-hidden outline-none"
 				ref={inputRef}
 				onClick={() => inputRef.current?.select()}
